@@ -29,15 +29,15 @@ The Customer Data dataset contains records of customers associated with a subscr
 
 ### Key Fields:
 ---
-The dataset includes the following features related to student performance:
- - CustomerID: A unique identifier for each sale.
- - CustomerName: A unique identifier for each customer.
- - Region: The type of product sold.
- - SubscriptionType: Geographical region where the sale took place.
- - SubscriptionStart: Date on which the sale occurred.
- - SubscriptionEnd: Number of units sold in each transaction.
- - Canceled: Price per individual unit of the product. 
- - Revenue: Total revenue for the transaction, calculated as Quantity Sold * Unit Price.
+The dataset includes the following features related to stt performance:
+ - CustomerID: A unique identifier for each customer, used to track individual subscription data.
+ - CustomerName: Customer unique Identity.
+ - Region: Customer’s location or region.
+ - SubscriptionType: The type of subscription plan chosen by the customer.
+ - SubscriptionStart: Date when the subscription began.
+ - SubscriptionEnd: Date when the subscription ended.
+ - Canceled: 
+ - Revenue: Total revenue generated from the customer’s subscription.
 
 ### Data Sources
 ---
