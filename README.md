@@ -29,14 +29,14 @@ The Customer Data dataset contains records of customers associated with a subscr
 
 ### Key Fields:
 ---
-The dataset includes the following features related to stt performance:
+The key fields includes the following features related to customer data:
  - CustomerID: A unique identifier for each customer, used to track individual subscription data.
  - CustomerName: Customer unique Identity.
  - Region: Customer’s location or region.
  - SubscriptionType: The type of subscription plan chosen by the customer.
  - SubscriptionStart: Date when the subscription began.
  - SubscriptionEnd: Date when the subscription ended.
- - Canceled: 
+ - Canceled: Shows whether a subscription is currently active, or canceled.
  - Revenue: Total revenue generated from the customer’s subscription.
 
 ### Data Sources
@@ -63,16 +63,18 @@ This data set was gotten from The Incubator Hub (LITA) as a task for my final Pr
 3. Click "Remove Duplicates" (in "Data Tools" group).
 4. Choose "Select All" or specific columns.
 5. Click
+
+ - Standardizing Dates: Reformatted Subscription Start Date and End Date to a consistent date format.
+ - Filtering Relevant Records: Focused on Active or Recently Canceled subscriptions to understand current customer behavior.
  - Handling Missing Values: There was no missing values.
- - Standardizing Dates: Converted OrderDate to a standard date format.
- - Calculating Total Sales: Ensured Total sales was calculated as Quantity Sold * Unit Price for consistency.
 
 ### Data Analysis
  - Excel Analysis
 
-   - Pivot Tables for Sales data:
-1. Created pivot tables in Excel to summarize Total Sales by Product Category, Region, and Month.
-2. Analyzed Average Sales per Product and Total Revenue by Region to identify high-performing products and regions.
+   - Pivot Tables for Subscription Patterns:
+1. Created pivot tables to find Most Popular Subscription Types.
+2. Average subscription duration.
+3. Most popular subscription type.
 
 *Insights:*
 
