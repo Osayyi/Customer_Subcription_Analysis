@@ -41,7 +41,7 @@ The key fields includes the following features related to customer data:
 
 ### Data Sources
 ---
-This data set was gotten from The Incubator Hub (LITA) as a task for my final Project.
+This data set is a Capstone Dataset and was gotten from The Incubator Hub (LITA) as a task for my final Project.
 
 ### Tools Used
 ---
@@ -56,14 +56,7 @@ This data set was gotten from The Incubator Hub (LITA) as a task for my final Pr
     1. for Data Visualization
 
 ### Data Cleaning
- - Removing Duplicates: Checked for duplicate rows to ensure each transaction is unique.
-   - "Remove Duplicates Feature"
-1. Select the data range (including headers).
-2. Go to "Data" tab.
-3. Click "Remove Duplicates" (in "Data Tools" group).
-4. Choose "Select All" or specific columns.
-5. Click
-
+ - Removing Duplicates: Checked for duplicate rows to ensure each transaction is unique. There was no duplicate rows.
  - Standardizing Dates: Reformatted Subscription Start Date and End Date to a consistent date format.
  - Filtering Relevant Records: Focused on Active or Recently Canceled subscriptions to understand current customer behavior.
  - Handling Missing Values: There was no missing values.
