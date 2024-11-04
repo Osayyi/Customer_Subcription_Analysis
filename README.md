@@ -38,6 +38,7 @@ The key fields includes the following features related to customer data:
  - SubscriptionEnd: Date when the subscription ended.
  - Canceled: Shows whether a subscription is currently active, or canceled.
  - Revenue: Total revenue generated from the customer’s subscription.
+ - Duration: How long each subcription lasted. Calculated as =YEARFRAC(E2,F2)
 
 ### Data Sources
 ---
@@ -64,10 +65,32 @@ This data set is a Capstone Dataset and was gotten from The Incubator Hub (LITA)
 ### Data Analysis
  - Excel Analysis
 
-   - Pivot Tables for Subscription Patterns:
-1. Created pivot tables to find Most Popular Subscription Types.
-2. Average subscription duration.
-3. Most popular subscription type.
+   - Pivot Tables to find:
+ 1. Subscription Patterns
+ 2. Average subscription duration.
+ 3. Most popular subscription type.
+
+#### Subcription Patterns Analysis
+I used pivot table to analyze the subcription types to find out which subcription types are the most popular and least popular.
+
+**Basic** is the most popular subscription type and **Premium** is the least.
+
+#### Average Subcription Duration
+I created another column called Duration and calculated the duration of the Subcription using the SubcriptionStart and SubcriptionEnd. 
+
+The duration of subcription for every customer in the dataset lasted for about a 1year, bringing the **Avearge subcription duration to 1**
+
+#### Most Popular Subcription Type
+Using the pivot table created, I identified the most popular subcription type based on the customer counts in each category.
+
+**Basic** with 3,553,325 is the most popular subcription type.
+
+|Subcription Patterns|Sum of CustomerID|
+|--------------------|-----------------|
+|Basic|3,553.325|
+|Premium|1,773,724|
+|Standard|1,785,348|
+|Grand Total|7,112,397|
 
 *Insights:*
 
