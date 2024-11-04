@@ -217,4 +217,5 @@ GROUP BY Canceled;
 The Customer Data Analysis dashboard presents a clear view of customer segments and subscription trends. These insights allow the business to make targeted decisions, such as focusing on retention strategies for subscribers and leveraging regional subscription trends for marketing efforts.
 
 ### Future Recommendations
-1. Introduce a loyalty program for long-term customers.
+1. Create a more affordable subcription plan.
+2. Invest more in marketing.
