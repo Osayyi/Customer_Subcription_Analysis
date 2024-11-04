@@ -107,11 +107,92 @@ I analyzed the customer growth across different regions to identify which region
  - The analysis shows that the East followed by the West haa the highest number of customers which shows that these regions have a strong market need for the subcription service.
 
  
- - SQL Analysis
+#### SQL Analysis
+```
+SELECT * FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+```
 
 *Insights*
+This query provides the customer count for each region, useful for regional analysis.
+```
+---- Total Number of Customers by Region ----
+SELECT Region, COUNT(DISTINCT CustomerID) AS TotalNumberofCustomers
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+GROUP BY Region;
+```
 
- - Power BI Dashboard
+*Insights*
+Finds the most common subscription type, giving insights into customer preferences.
+```
+---- Most Popular Subscription Type by Customer Count ----
+SELECT SubscriptionType, COUNT(CustomerID) AS CustomerCount
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+GROUP BY SubscriptionType
+ORDER BY 1 DESC
+```
+
+*Insights*
+ Identifies customers who canceled within six months, which could indicate churn risks.
+ No Customer canceled their subcription within six months
+```
+---- Customers Who Canceled Within 6 Months ----
+SELECT CustomerID, SubscriptionStart, SubscriptionEnd
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6;
+```
+
+*Insights*
+Calculates the average duration of subscriptions, which helps in understanding customer retention.
+The average subscription duration lasted for 12 Months.
+```
+---- Average Subscription Duration ----
+SELECT AVG(DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd)) AS AverageSubscriptionDuration
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data];
+```
+
+*Insights*
+Finds loyal customers with subscriptions longer than a year.
+No customer has a subcription plan of more than a year (12 Months)
+```
+---- Customers with Subscriptions Longer than 12 Months ----
+SELECT CustomerID
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) > 12;
+```
+
+*Insights*
+Aggregates revenue by subscription type, which is valuable for revenue distribution analysis.
+```
+---- Total Revenue by Subscription Type ----
+SELECT SubscriptionType, SUM(Revenue) AS TotalRevenue
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+GROUP BY SubscriptionType;
+```
+
+*Insights*
+Identifies regions with high cancellation rates, pointing to possible areas for improvement.
+West, South and North has the highest cancellation rates.
+```
+---- Top 3 Regions by Subscription Cancellations ----
+SELECT TOP 3 Region, COUNT(*) AS SubscriptionCancellations
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+WHERE Canceled = 1
+GROUP BY Region
+ORDER BY 1 DESC
+```
+
+*Insights*
+Gives a quick overview of active vs. canceled subscriptions, providing insights into retention.
+0 representing the number of canceled subscriptions sums up to 18612, while
+1 which represents the number of active subcriptions sum up to 15175.
+```
+---- Total Number of Active and Canceled Subscriptions ----
+SELECT Canceled, COUNT(*) AS Count
+FROM [dbo].[LITA Capstone Dataset Osayi favour Customer Data]
+GROUP BY Canceled;
+```
+
+#### Power BI Dashboard
 
 *Insights*
 
