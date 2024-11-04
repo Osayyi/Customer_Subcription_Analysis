@@ -193,6 +193,10 @@ GROUP BY Canceled;
 ```
 
 #### Power BI Dashboard
+
+![Screenshot (25)](https://github.com/user-attachments/assets/e9c3490a-a5cf-4770-8d2d-d91301d7632d)
+
+
 1. **Customer Segments by Subscription Type**: The pie chart displays the distribution of subscription types, with the Basic Subscription as the most popular. This visual offers a quick snapshot of customer preferences and can guide the design of future promotions targeting popular plans.
 
 2. **Average Subscription Duration**: A card visual shows the average duration of customer subscriptions, indicating loyalty levels. A durations of 1 year is short, this indicates that it needs improvement.
