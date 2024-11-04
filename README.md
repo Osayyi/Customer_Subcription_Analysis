@@ -104,7 +104,7 @@ I analyzed the customer growth across different regions to identify which region
 *Insights:*
  - Annual subcriptions are more popular.
  - Basic Subcription is the most poupular subcription type, probably due to the cost of the subcription.
- - The analysis shows that the East followed by the West haa the highest number of customers which shows that these regions have a strong market need for the subcription service.
+ - The analysis shows that the East followed by the West has the highest number of customers which shows that these regions have a strong market need for the subcription service.
 
  
 #### SQL Analysis
@@ -193,17 +193,24 @@ GROUP BY Canceled;
 ```
 
 #### Power BI Dashboard
- 1. 
+1. **Customer Segments by Subscription Type**: The pie chart displays the distribution of subscription types, with the Basic Subscription as the most popular. This visual offers a quick snapshot of customer preferences and can guide the design of future promotions targeting popular plans.
+
+2. **Average Subscription Duration**: A card visual shows the average duration of customer subscriptions, indicating loyalty levels. A durations of 1 year is short, this indicates that it needs improvement.
+
+3. **Cancellations by Subscription Type and Monthly Trends**: A stacked bar chart reveals cancellation counts by subscription type, highlighting that Monthly Subscriptions have the highest cancellations. The line chart shows monthly trends, with specific months showing higher cancellations, suggesting potential seasonal factors or customer behavior patterns affecting retention.
+
+4. **Regional Analysis of Subscription Types**: A slicer was used to show the region by subscription type, indicating subscription preferences across regions, showing certain subscription preference. This insight helps create region-specific campaigns and target areas with suitable subscription offers.
+
+5. **Active vs. Canceled Subscriptions**: A donut chart shows the proportion of active to canceled subscriptions, with a higher percentage of active subscriptions indicating a stable customer base.
 
 ### Findings and Insights
 - Preference for Annual Subscriptions: The popularity of annual plans suggests an opportunity to design incentives to attract more long-term subscribers.
 - High number of Basic Subscribers: The popularity of the basic plan might be due to the price of the plan. Other plans can be made more affordable to encourage subscribers. 
 - High Cancellation Rates in Monthly Subscriptions: No subscriber renewed their subcription plan, this might possibly be due to lack of customer engagement. Targeted communication or exclusive benefits for monthly subscribers might reduce cancellations.
-- Regional Trends: Noting different subscription preferences by region can help in tailoring region-specific promotions to maximize conversion and renewal rates. The Southern Region with more subcribers can be studied to gain insights for marketing strategies.
+- Regional Trends: Noting different subscription preferences by region can help in tailoring region-specific promotions to maximize conversion and renewal rates. The Eastern Region with more subcribers can be studied to gain insights for marketing strategies.
 
 ### Conclusion
 The Customer Data Analysis dashboard presents a clear view of customer segments and subscription trends. These insights allow the business to make targeted decisions, such as focusing on retention strategies for subscribers and leveraging regional subscription trends for marketing efforts.
 
 ### Future Recommendations
 1. Introduce a loyalty program for long-term customers.
-2. Expand popular product categories in high-performing regions.
