@@ -75,10 +75,16 @@ I used pivot table to analyze the subcription types to find out which subcriptio
 
 **Basic** is the most popular subscription type and **Premium** is the least.
 
+![Screenshot (16)](https://github.com/user-attachments/assets/4ba44695-900a-4813-b26a-2589918f4bad)
+
+
 #### Average Subcription Duration
 I created another column called Duration and calculated the duration of the Subcription using the SubcriptionStart and SubcriptionEnd. 
 
 The duration of subcription for every customer in the dataset lasted for about a 1year, bringing the **Avearge subcription duration to 1**
+
+![Screenshot (17)](https://github.com/user-attachments/assets/bc00946c-9b74-41e4-8108-3556e9252717)
+
 
 #### Most Popular Subcription Type
 Using the pivot table created, I identified the most popular subcription type based on the customer counts in each category.
@@ -92,8 +98,15 @@ Using the pivot table created, I identified the most popular subcription type ba
 |Standard|1,785,348|
 |Grand Total|7,112,397|
 
-*Insights:*
+### Customer Growth by Region
+I analyzed the customer growth across different regions to identify which region have the most customers. The **East** has the most customers.
 
+*Insights:*
+ - Annual subcriptions are more popular.
+ - Basic Subcription is the most poupular subcription type, probably due to the cost of the subcription.
+ - The analysis shows that the East followed by the West haa the highest number of customers which shows that these regions have a strong market need for the subcription service.
+
+ 
  - SQL Analysis
 
 *Insights*
