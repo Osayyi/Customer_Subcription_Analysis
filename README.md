@@ -193,12 +193,16 @@ GROUP BY Canceled;
 ```
 
 #### Power BI Dashboard
-
-*Insights*
+ 1. 
 
 ### Findings and Insights
+- Preference for Annual Subscriptions: The popularity of annual plans suggests an opportunity to design incentives to attract more long-term subscribers.
+- High number of Basic Subscribers: The popularity of the basic plan might be due to the price of the plan. Other plans can be made more affordable to encourage subscribers. 
+- High Cancellation Rates in Monthly Subscriptions: No subscriber renewed their subcription plan, this might possibly be due to lack of customer engagement. Targeted communication or exclusive benefits for monthly subscribers might reduce cancellations.
+- Regional Trends: Noting different subscription preferences by region can help in tailoring region-specific promotions to maximize conversion and renewal rates. The Southern Region with more subcribers can be studied to gain insights for marketing strategies.
 
 ### Conclusion
+The Customer Data Analysis dashboard presents a clear view of customer segments and subscription trends. These insights allow the business to make targeted decisions, such as focusing on retention strategies for subscribers and leveraging regional subscription trends for marketing efforts.
 
 ### Future Recommendations
 1. Introduce a loyalty program for long-term customers.
